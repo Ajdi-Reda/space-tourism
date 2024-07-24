@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="home">
+    <div class="mx-auto relative">
+      <nav class="p-8 sm:p-0 lg:py-12 relative">
+        <!-- Horizontal line -->
+        <div class="hidden lg:flex line"></div>
+
+        <div class="flex justify-between items-center">
+          <div class="sm:pl-10 lg:pl-14">
+            <img
+              src="/assets/shared/logo.svg"
+              class="sm:w-[5rem] sm:h-[5rem]"
+              alt="Logo"
+            />
+          </div>
+          <!-- Mobile menu -->
+          <div class="sm:hidden">
+            <div id="open" class="cursor-pointer z-50">
+              <img src="/assets/shared/icon-hamburger.svg" alt="Open Menu" />
+            </div>
+            <div
+              id="close"
+              class="hidden cursor-pointer z-50 absolute top-0 right-0 pt-12 pr-8"
+            >
+              <img src="/assets/shared/icon-close.svg" alt="Close Menu" />
+            </div>
+            <ul
+              id="menuList"
+              class="menuList font-barlowC absolute text-white tracking-widest uppercase hidden md:hidden right-0 top-0 pt-52 pr-36 pl-8 space-y-10 min-h-screen transition-all duration-300"
+            >
+              <li><a href="index.html" class="text-2xl">00 Home</a></li>
+              <li>
+                <a href="destination.html" class="text-2xl">01 Destination</a>
+              </li>
+              <li><a href="crew.html" class="text-2xl">02 Crew</a></li>
+              <li>
+                <a href="technology.html" class="text-2xl">03 Technology</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tablet & desktop menu -->
+          <div class="menu hidden sm:flex p-12 lg:px-72">
+            <ul
+              id="menuList"
+              class="flex font-barlowC items-center gap-16 text-white tracking-widest uppercase"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">00</span>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="destination.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">01</span>
+                  Destination</a
+                >
+              </li>
+              <li>
+                <a
+                  href="crew.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">02</span>
+                  Crew</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">03</span>
+                  Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section
+        class="flex flex-col items-center justify-center lg:flex-row lg:justify-between sm:mt-6 lg:mx-36 lg:mt-24"
+      >
+        <div class="text-white px-8 text-center lg:text-left">
+          <h3
+            class="text-2xl text-secondary font-barlowC tracking-widest uppercase sm:text-3xl lg:text-4xl"
+          >
+            So, you want to travel to
+          </h3>
+          <h1
+            class="text-9xl font-bellefair mt-10 uppercase tracking-wider sm:text-[10rem] lg:text-[14rem]"
+          >
+            space
+          </h1>
+          <p
+            class="para font-barlow text-secondary mx-auto tracking-[0.05rem] leading-10 text-xl mt-8 max-w-[50rem] sm:text-2xl lg:text-3xl"
+          >
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div
+          class="align-bottom flex items-center justify-center mt-4 lg:mr-24 lg:mt-24 mb-8"
+        >
+          <div
+            class="h-60 w-60 sm:h-96 sm:w-96 lg:h-[22rem] lg:w-[22rem] flex items-center justify-center bg-white rounded-full"
+          >
+            <a
+              href="destination.html"
+              class="text-4xl font-bellefair uppercase sm:text-5xl lg:text-[3.5rem]"
+            >
+              explore
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

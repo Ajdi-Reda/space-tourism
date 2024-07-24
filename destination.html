@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/destination.js" defer></script>
+  </head>
+  <body class="destination">
+    <div class="mx-auto relative">
+      <nav class="p-8 sm:p-0 lg:py-12 relative">
+        <!-- Horizontal line -->
+        <div class="hidden lg:flex line"></div>
+
+        <div class="flex justify-between items-center">
+          <div class="sm:pl-10 lg:pl-14">
+            <img
+              src="/assets/shared/logo.svg"
+              class="sm:w-[5rem] sm:h-[5rem]"
+              alt="Logo"
+            />
+          </div>
+          <!-- Mobile menu -->
+          <div class="sm:hidden">
+            <div id="open" class="cursor-pointer z-50">
+              <img src="/assets/shared/icon-hamburger.svg" alt="Open Menu" />
+            </div>
+            <div
+              id="close"
+              class="hidden cursor-pointer z-50 absolute top-0 right-0 pt-12 pr-8"
+            >
+              <img src="/assets/shared/icon-close.svg" alt="Close Menu" />
+            </div>
+            <ul
+              id="menuList"
+              class="menuList absolute text-white tracking-widest uppercase hidden md:hidden right-0 top-0 pt-52 pr-36 pl-8 space-y-10 min-h-screen transition-all duration-300"
+            >
+              <li><a href="index.html" class="text-2xl">00 Home</a></li>
+              <li>
+                <a href="destination.html" class="text-2xl">01 Destination</a>
+              </li>
+              <li><a href="crew.html" class="text-2xl">02 Crew</a></li>
+              <li>
+                <a href="technology.html" class="text-2xl">03 Technology</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tablet & desktop menu -->
+          <div class="menu hidden sm:flex p-12 lg:px-72">
+            <ul
+              id="menuList"
+              class="flex font-barlowC items-center gap-16 text-white tracking-widest uppercase"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">00</span>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="destination.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">01</span>
+                  Destination</a
+                >
+              </li>
+              <li>
+                <a
+                  href="crew.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">02</span>
+                  Crew</a
+                >
+              </li>
+              <li>
+                <a
+                  href="technology.html"
+                  class="text-2xl lg:text-3xl tracking-[0.3rem]"
+                  ><span class="hidden lg:inline lg:font-semibold">03</span>
+                  Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="px-8 text-white flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-32 mt-16 mb-8"
+      >
+        <div class="flex flex-col items-center">
+          <p
+            class="uppercase text-secondary font-barlowC text-[1.6rem] md:text-4xl tracking-wider"
+          >
+            01 pick your destination
+          </p>
+          <div class="w-[65%] mt-4 lg:mt-16 lg:w-[70%]">
+            <img id="img" src="./assets/destination/image-moon.png" alt="" />
+          </div>
+        </div>
+
+        <div class="mt-6 text-center lg:text-left">
+          <div
+            class="flex font-barlowC text-[1.4rem] text-secondary items-center justify-center gap-8 sm:gap-12 sm:text-[1.5rem] md:gap-14 lg:gap-20 lg:text-[2rem] lg:justify-start"
+          >
+            <button class="uppercase tracking-wider" id="moon">Moon</button>
+            <button class="uppercase tracking-wider" id="mars">Mars</button>
+            <button class="uppercase tracking-wider" id="europa">Europa</button>
+            <button class="uppercase tracking-wider" id="titan">Titan</button>
+          </div>
+          <h1
+            id="planet"
+            class="text-8xl font-bellefair sm:text-[8rem] md:text-[9rem] lg:text-[10rem] uppercase mt-6"
+          >
+            Moon
+          </h1>
+          <p
+            id="desc"
+            class="para text-secondary tracking-wider font-barlow mx-auto px-6 text-xl mt-8 max-w-[50rem] sm:text-2xl lg:text-[1.7rem] lg:max-w-[50rem] border-b-[1px] border-white pb-8"
+          >
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+
+          <div
+            class="mt-12 flex flex-col items-center justify-center gap-12 md:flex-row mb-20 md:gap-24 lg:justify-start lg:gap-32"
+          >
+            <div class="space-y-4">
+              <p
+                class="text-lg md:text-xl tracking-[0.3rem] uppercase lg:text-2xl font-barlowC text-secondary"
+              >
+                avg. distance
+              </p>
+              <p
+                id="dist"
+                class="text-3xl md:text-4xl uppercase tracking-wider lg:text-5xl font-bellefair"
+              >
+                384.400 KM
+              </p>
+            </div>
+            <div class="space-y-4">
+              <p
+                class="text-lg md:text-xl tracking-[0.3rem] uppercase lg:text-2xl font-barlowC text-secondary"
+              >
+                est. travel time
+              </p>
+              <p
+                id="time"
+                class="text-3xl md:text-4xl uppercase tracking-wider lg:text-5xl font-bellefair"
+              >
+                3 days
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
